@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+    <title>Základní kurz tvorby stránek</title>
+</head>
+<body>
+    <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="navbar">
+                <div class="dropdown" style="font-size: 32px;">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="container">
+                    <ul>
+                        <li><a href="index.html">Základy</a></li>
+                        <li><a href="struktura.html">Struktura stránky v HTML</a></li>
+                        <li><a href="editory.html">HTML editory</a></li>
+                        <li><p>Navštivte také:</p></li>
+                        <li><a href="tahak.html">HTML tahák</a></li>
+                        <li><a href="domeny.html">Domény na webu</a></li>
+                        <li><a href="www.html">Jak funguje WWW</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <header>
+            <h1>HTML tahák</h1>
+            <div class="borderTop"></div>
+            <p>
+                <a href="#struktura">Struktura html souboru</a> - 
+                <a href="#doctype">Doctype</a> - 
+                <a href="#cestina">Čeština</a> - 
+                <a href="#titulek">Titulek</a> - 
+                <a href="#keywords">Keywords a description</a> - 
+                <a href="#styl">Zápis stylu</a> - 
+                <a href="#skript">Zápis Javascriptu</a> - 
+                <a href="#metamobil">Meta tag viewport</a> - 
+                <a href="#poznamky">Poznámky</a> - 
+                <a href="#odkazy">Odkazy</a> - 
+                <a href="#barvy">Barvy stránky a odkazů</a> - 
+                <a href="#nadpisy">Nadpisy</a> - 
+                <a href="#odstavce">Odstavce a vynucené zalomení řádku</a> - 
+                <a href="#zarovnani">Zarovnání odstavce</a> - 
+                <a href="#font">Nastavení fontu</a> - 
+                <a href="#barvapisma">Barva písma</a> - 
+                <a href="#tucnost">Tučnost a kurzíva</a> - 
+                <a href="#podtrzeni">Podtržení</a> - 
+                <a href="#obrazek">Obrázek</a> - 
+                <a href="#seznamy">Seznamy</a> - 
+                <a href="#div">Div = oddíl</a> - 
+                <a href="#rozvrzeni">Rozvržení stránky</a> - 
+                <a href="#tabulky">Tabulky</a> - 
+                <a href="#iframe">Iframe</a> - 
+                <a href="#bublina">Bublina na přejetí myši</a> - 
+                <a href="#flash">Flash</a> - 
+                <a href="#presmerovani">Přesměrování</a> - 
+                <a href="#stazeni">Stažení souboru</a>
+            </p>
+        </header>
+        <div id="obsah">
+            <p>
+                Tento tahák hodně zjednodušuje a je určen začátečníkům, aby si z něj mohli kopírovat kousky HTML kódu. Spousta věcí je dělána pomocí CSS namísto HTML.
+                Pomocí CSS je to funkčnější, systematičtější a asi i jednodušší než čistým HTML.
+            </p>
+            <p>
+                Nevíte, kam se ty HTML kódy píšou? Podívejte se na <a href="index.html">základy HTML</a>.
+            </p>
+            <div class="border"></div>
+            <p id="struktura">
+                <img src="img/html_kod.png" alt="HTML kód" width="700" height="400" align="right"> 
+                <h3>Struktura html souboru</h3>
+                <p>Nejčastější "kopyto" stránky:</p>
+                <p class="code">
+                    &lt;!DOCTYPE HTML&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&lt;meta charset="windows-1250"&gt;<br>
+                    &nbsp;&nbsp;&lt;title&gt;Jméno&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;samotný text stránky<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </p>
+                <p>
+                    (upravte si Jméno stránky, samotný text stránky, případně to doctype a windows-1250)
+                </p>
+            </p>
+            <div class="border"></div>
+            <p id="doctype">
+                <h3>Doctype</h3>
+                <p>Nejčastější přechodový (quirk):</p>
+                <p class="code">
+                    &lt;!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN"&gt;<br>
+                </p>
+                <p>Nejčastější striktní HTML:</p>
+                <p class="code">
+                    &lt;!doctype html&gt;<br>
+                </p>
+            </p>
+            <div class="border"></div>
+            <p id="cestina">
+                <h3>Čeština</h3>
+                <p>Windows - pokud nevíte, v jakém píšete kódování, tak pravděpodobně v tomhle:</p>
+                <p class="code">
+                    &lt;meta charset="windows-1250"&gt;
+                </p>
+                <p>UTF-8:</p>
+                <p class="code">
+                    &lt;meta charset="UTF-8"&gt;
+                </p>
+                <p>Iso:</p>
+                <p class="code">
+                    &lt;meta charset="iso-8859-2"&gt;
+                </p>
+            </p>
+            <div class="border"></div>
+            <p id="titulek">
+                <h3>Titulek</h3>
+                <p class="code">
+                    &lt;title&gt;Titulek stránky&lt;/title&gt;
+                </p>
+                <p>V titulku stránky se nesmějí používat žádné html tagy.</p>
+            </p>
+            <div class="border"></div>
+            <p id="keywords">
+                <h3>Keywords a description</h3>
+                <p>Klíčová slova, keywords(vyhledávače je již ignorují):</p>
+                <p class="code">
+                    &lt;meta name="keywords" content="slova slova slova"&gt;
+                </p>
+                <p>Popisek stránky, description (objevuje se občas jako popisek v Google či Seznamu):</p>
+                <p class="code">
+                    &lt;meta name="description" content="Co to čte princ dánský">
+                </p>
+            </p>
+            <div class="border"></div>
+            <p id="styl">
+                <h3>Zápis stylu</h3>
+                <p>Píše se do hlavičky (mezi &lt;head&gt; a &lt;/head&gt;). Například nastavení nulových okrajů těla:</p>
+                <p class="code">
+                    &lt;style type="text/css"&gt;<br>
+                    &nbsp;&nbsp;body{margin: 0px;}<br>
+                    &lt;/style&gt;
+                </p>
+                <h3>Připojení externího stylu</h3>
+                <p>Takto lze připojit soubor.css k souboru (vkládá se obvykle do každé stránky mezi &lt;head&gt; a &lt;/head&gt;):</p>
+                <p class="code">
+                    &lt;link rel="stylesheet" href="soubor.css" type="text/css"&gt;
+                </p>
+                <p>V tomto případě se předpokládá, že se soubor.css nachází v tomtéž adresáři, jako je stránka. Nebo:</p>
+                <p class="code">
+                    &lt;stlye type="text/css"&gt;<br>
+                    @import url("soubor.css");<br>
+                    &lt;/style&gt;
+                </p>
+            </p>
+            <div class="border"></div>
+            <p id="skript">
+                <h3>Zápis Javascriptu</h3>
+                <p>Přímo do stránky:</p>
+                <p class="code">
+                    &lt;script type="text/javascript"&gt;<br>
+                    &nbsp;&nbsp;zápis javascriptu<br>
+                    &lt;/script&gt;
+                </p>
+                <p>Volání externího skriptu:</p>
+                <p class="code">
+                    &lt;script type="text/javascript" src"cesta/soubor.js"&gt;&lt;/script&gt;
+                </p>
+            </p>
+            <div class="border"></div>
+            <p id="metamobil">
+                <h3>Meta tag viewport</h3>
+                <p>Tento meta tag řekne mobilům, že nemají předstírat, že mají větší šířku než mají. To je důležité pro responzivní design.</p>
+                <p class="code">
+                    &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+                </p>
+                <p>Pokud nevíte, co děláte, použítí tohoto tagu se vyhněte.</p>
+            </p>
+            <div class="border"></div>
+            <p id="poznamky">
+                <h3>Poznámky</h3>
+                <p>Poznámka v HTML:</p>
+                <p class="code">
+                    &lt;!--toto je poznámka v HTML--&gt; a toto už ne<br>
+                    /* toto je poznámka v CSS stylu */<br>
+                    // toto není poznámka v CSS<br>
+                    &lt;/style&gt;
+                </p>
+                <div class="border"></div>
+                <p id="odkazy">
+                    <h3>Odkazy</h3>
+                    <p>Odkaz do jiného webu musí obsahovat http:// (to je absolutní adresování)</p>
+                    <p class="code">
+                        &lt;a href="http://www.seznam.cz"&gt;Seznam&lt;/a&gt;
+                    </p>
+                    <p>Zobrazí se takto: <a href="http://www.seznam.cz" id="seznam">Seznam</a></p>
+                    <p>Odkaz na soubor stranka.html do stejného adresáře (bez http://, takže relativní adresování):</p>
+                    <p class="code">
+                        &lt;a href="stranka.html"&gt;Odkaz na stránku&lt;/a&gt;
+                    </p>
+                    <p>Odkaz na soubor stranka.html ležící v adresáři o úroveň výš (dvě tečky znamenají úroveň výš=předchozí adresář):</p>
+                    <p class="code">
+                        &lt;a href="../stranka.html"&gt;Odkaz do vyššího adresáře&lt;/a&gt;
+                    </p>
+                    <p>Otevření odkazu do nového okna:</p>
+                    <p class="code">
+                        &lt;a href="stranka.html" target="_blank"&gt;odkaz do nového okna&lt;/a&gt;
+                    </p>
+                    <p>nebo</p>
+                    <p class="code">
+                        &lt;a href="http://www.seznam.cz" target="_blank"&gt;odkaz na Seznam do nového okna&lt;/a&gt;
+                    </p>
+                    <h3>Záložky (kotvy, anchory)</h3>
+                    <p>Záložka někde v dokumentu:</p>
+                    <p class="code">
+                        &lt;a name="jmeno_zalozky"&gt;&lt;/a&gt;
+                    </p>
+                    <p>a po kliknutí na tento odkaz se na záložku po kliknutí odroluje:</p>
+                    <p class="code">
+                        &lt;a href="#jmeno_zalozky"&gt;odrolovat&lt;/a&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="barvy">
+                    <h3>Barvy stránky a odkazů</h3>
+                    <p>Tag &lt;style&gt; patří mezi tagy &lt;head&gt; a &lt;/head&gt;:</p>
+                    <p class="code">
+                        &lt;style type="text/css"&gt;<br>
+                        &nbsp;&nbsp;body {color: black; background-color: white; background-image: url("pozadi.gif");} /* text černý, barva pozadí bílá, obrázek na pozadí */<br><br>
+                                
+                        &nbsp;&nbsp;a:link {color: blue;} /* nenavštívený odkaz */<br>
+                        &nbsp;&nbsp;a:visited {color: navy;}/* navštívený odkaz */<br>
+                        &nbsp;&nbsp;a:hover {color: red} /* odkaz, přes který se jede myší*/<br>
+                        &lt;/style&gt;
+                    </p>
+                    <p>Dříve se to dělalo pomocí atributů tagu &lt;body&gt;, to je zastaralé.</p>
+                </p>
+                <div class="border"></div>
+                <p id="nadpisy">
+                    <h3>Nadpisy</h3>
+                    <p class="code">
+                            &lt;h1&gt;Nadpis nejvyšší úrovně&lt;/h1&gt;<br>
+                            &lt;h2&gt;Nadpis kapitoly nebo odstavce&lt;/h2&gt;<br>
+                            &lt;h3&gt;Podnadpis&lt;/h3&gt;<br>
+                            ...<br>
+                            &lt;h6&gt;Sedmička už nefunguje&lt;/h6&gt;<br>
+                    </p>
+                    <p>Kromě čtenářů si nadpisů všímají i vyhledávače.</p>
+                </p>
+                <div class="border"></div>
+                <p id="odstavce">
+                    <h3>Odstavce a vynucené zalomení řádku</h3>
+                    <p class="code">
+                        &lt;p&gt;Odstavec zalamuje řádky podle šířky prostoru, který má (nejčastěji okna). Na konci odstavce se zalomí řádek.&lt;/p&gt;
+                    </p>
+                    <p>Je-li potřeba dovnitř odstavce zalomit řádek, použije se tag &lt;br&gt;, v normálních textech k tomu ale není důvod:</p>
+                    <p class="code">
+                        &lt;p&gt;Text odstavce plyne&lt;br&gt; a najednou se zalomí řádek.&lt;/p&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="zarovnani">
+                    <h3>Zarovnání odstavce</h3>
+                    <p>Normálně se odstavce (i jiné tagy) zarovnávají doleva. Zarovnání jednoho odstavce doprava:</p>
+                    <p class="code">
+                        &lt;p style="text-align: right" &gt;Odstavec zarovnaný doprava.&lt;/p&gt;
+                    </p>
+                    <p>Zarovnání na střed a do bloku:</p>
+                    <p class="code">
+                        &lt;p style="text-align: center"&gt;Odstavec zarovnaný na střed.&lt;/p&gt;<br>l
+                        &lt;p style="text-align: justify"&gt;Odstavec zarovnaný do bloku.&lt;/p&gt;
+                    </p>
+                    <p>Lepší je ale nastavit všechny odstavce najednou globálním stylem:</p>
+                    <p class="code">
+                        &lt;style type="text/css"&gt;<br>
+                            &nbsp;&nbsp;p {text-align: center;} /* všechny odstavce budou zarovnány na střed */<br>
+                            &nbsp;&nbsp;address {text-align: right;} /* tag address bude zarovnán doprava */<br>
+                            &nbsp;&nbsp;.doleva {text-align: left} /* ale tag, který bude v sobě mít class="doleva", se bude zarovnávat doleva */<br>
+                        &lt;/style&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="font">
+                    <h3>Nastavení fontu</h3>
+                    <p class="code">
+                        &lt;span style="font-family: Arial, sans-serif"&gt;Text arialem&lt;/span&gt;
+                    </p>
+                    <p>nebo použití na odstavce:</p>
+                    <p class="code">
+                        &lt;p style="font-family: Arial, sans-serif"&gt;Odstavec arialem&lt;/p&gt;
+                    </p>
+                    <p>nebo použití na odstavec:</p>
+                    <p class="code">
+                        &lt;p style="font family: Arial, sans-serif"&gt;Odstavec arialem&lt;/p&gt;
+                    </p>
+                    <p>dá se použít na každý tag, třeba i na body, což ovlivní celou stránku:</p>
+                    <p class="code">
+                        &lt;body style="font-family: Arial"&gt;
+                    </p>
+                    <p>Lepší je to ale zapsat globálně stylem do hlavičky:</p>
+                    <p class="code">
+                        &lt;style type="text/css"&gt;<br>
+                        &nbsp;&nbsp;body {font-family: Arial, sans serif;} /*pro celý dokument*/<br>
+                        &nbsp;&nbsp;p {font-family: "Times New Roman", serif} /*pro všechny odstavce &lt;p&gt;*/<br>
+                        &nbsp;&nbsp;.trida{font-family: Verdana, sans serif} /*pro všechny tagy s class="trida"*/<br>
+                        &lt;/style&gt;
+                    </p>
+                    <p>Víceslovné názvy písem musejí být v uvozovkách.</p>
+                </p>
+                <div class="border"></div>
+                <p id="barvapisma">
+                    <h3>Barva písma</h3>
+                    <p class="code">
+                        &lt;span style="color: red;"&gt;Červené písmo&lt;/span&gt;
+                    </p>
+                    <p>nebo třeba pro odstavec</p>
+                    <p class="code">
+                        &lt;p style="color: blue"&gt;Odstavec modrým písmem&lt;/p&gt;
+                    </p>
+                    <p>
+                        Dá se to napsat do libovolného tagu, ale nemusí to fungovat u odkazů (tag &lt;a&gt;), u nich se to musí udělat globálním stylem &lt;style&gt;,
+                        což je ale stejně lepší i v jiných případech:
+                    </p>
+                    <p class="code">
+                        &lt;style type="text/css&gt;<br>
+                        &nbsp;&nbsp;body {color: maroon; background-color: white;} /*hnědé písmo pro celý dokument, barva pozadí bílá*/<br>
+                        &nbsp;&nbsp;p {color: green;} /*zelené písmo pro všechny odstavce &lt;p&gt;*/<br>
+                        &nbsp;&nbsp;.zlute {color: yellow;} /*pro všechny tagy s class="zlute"*/<br>
+                        &nbsp;&nbsp;a:link {color: blue;} /*Nenavštívený odkaz modrý*/<br>
+                        &nbsp;&nbsp;a:visited {color: navy;} /*navštívený odkaz tmavě modrý*/<br>
+                        &nbsp;&nbsp;a:hover {color: red;} /*odkaz, přes který se jede myší červený*/<br>
+                        &lt;/style&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="tucnost">
+                    <h3>Tučnost a kurzíva</h3>
+                    <p>&lt;b&gt;Tučné písmo&lt;/b&gt;</p>
+                    <p>&lt;i&gt;Kurzíva&lt;/i&gt;</p>
+                    <p>Normální písmo, &lt;b&gt;tučné písmo, &lt;i&gt;tučná kurzíva&lt;/i&gt;&lt;/b&gt;, &lt;i&gt;normální kurzíva&lt;/i&gt;.</p>
+                    <p>&lt;strong&gt;také tučné písmo (zvýraznění)&lt;/strong&gt;</p>
+                    <p>&lt;em&gt;také kurzíva (zvýraznění)&lt;/em&gt;</p>
+                </p>
+                <div class="border"></div>
+                <p id="podtrzeni">
+                    <h3>Podtržení</h3>
+                    <p class="code">
+                        &lt;u&gt;Podtržený text&lt;/u&gt;
+                    </p>
+                    <p>Ale nepoužívejte to, plete se to s odkazem. Taky se to blbě čte.</p>
+                    <p class="code">
+                        &lt;span style="text-decoration: underline"&gt;podtržení pomocí stylu&lt;/span&gt;
+                    </p>
+                    <p>také doporučuji nepoužívat.</p>
+                    <p>Odkazy se podtrhávají automaticky:</p>
+                    <p class="code">
+                        &lt;style type="text/css"&gt;<br>
+                        &nbsp;&nbsp;a {text-decoration: none;}<br>
+                        &nbsp;&nbsp;a:hover {text-decoration: underline;}<br>
+                        &lt;/style&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="obrazek">
+                    <h3>Obrázek</h3>
+                    <p>Obrázek ze stejného adresáře, ve kterém je html stránka:</p>
+                    <p class="code">
+                        &lt;img src="obrazek.gif" width="200" height="200" alt="obrázek"&gt;
+                    </p>
+                    <p>
+                        nebo obrazek.jpg nebo obrazek.png. Zadané rozměry by měly být skutečné rozměry obrázku (jednotka se v HTML neuvádí, ale rozměry jsou v pixelech = obrazovkových
+                        bodech).
+                    </p>
+                    <p>Obrázek z nadřazeného adresáře (dvě tečky):</p>
+                    <p class="code">
+                        &lt;img src="../obrazek.gif" width="200" height="200" alt="obrázek"&gt;
+                    </p>
+                    <p>Obrázek z webu (absolutní adresa, začíná http://):</p>
+                    <p class="code">
+                        &lt;img src="http://upload.wikimedia.org/wikipedia/commons/2/27/Square_200x200.svg"
+                    </p>
+                    <p>Obrázek fungující jako odkaz (kliká):</p>
+                    <p class="code">
+                        &lt;a href="cilova_stranka.html"&gt;&lt;img src="obrazek.gif" width="200" height="200" alt="obrázek"&gt;&lt;/a&gt;
+                    </p>
+                    <p>Obrázek fungující jako odkaz, ale bez modrého rámečku:</p>
+                    <p class="code">
+                        &lt;a href="cilova_stranka.html"&gt;&lt;img src="obrazek.gif" width="200" height="200" alt="obrázeků border="0"&gt;&lt;/a&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="seznamy">
+                    <h3>Seznamy</h3>
+                    <h3>Odrážkový seznam (puntíky):</h3>
+                    <p class="code">
+                        &lt;ul&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;první položka&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;druhá položka&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </p>
+                    <h3>Číšlovaný seznam:</h3>
+                    <p class="code">
+                        &lt;ol&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;první položka, čísluje se automaticky&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;druhá položka&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </p>
+                    <p>Jiný typ číslování, třeba a), b), c):</p>
+                    <p class="code">
+                        &lt;style type="text/css"&gt;<br>
+                        &nbsp;&nbsp;il li {list-style-type: lower-alpha;}<br>
+                        &lt;/style&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="div">
+                    <h3>Div = oddíl</h3>
+                    <p>Tag div slouží nejčastěji na obalení více blokových prvků. Například když budu chtít mít tři odstavce červeným písmem a odsazené zleva o 30px:</p>
+                    <p class="code">
+                        &lt;div style="color:red; margin-left: 30px;"&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;odstavec&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;odstavec&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;odstavec&lt;/p&gt;<br>
+                        &lt;/div&gt;
+                    </p>
+                    <p>Ale dá se to dělat samozřejmě i jinak, stejně tak &lt;div&gt; má širší použití, většinou na rozvržení designu stránky.</p>
+                </p>
+                <div class="border"></div>
+                <p id="rozvrzeni">
+                    <h3>Rozvržení stránky</h3>
+                    <p>Rozvržení stránky se dá dělat desítkami různých způsobů. Toto je jen příklad:</p>
+                    <p class="code">
+                        &lt;body&gt;<br>
+                        &lt;div id="cela-stranka"&gt;<br>
+                        &nbsp;&nbsp;&lt;div id="hlavicka"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Hlavicka<br>
+                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&lt;div id="leve-menu"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Levé menu<br>
+                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&lt;div id="hlavni-text"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Hlavní text<br>
+                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&lt;div id="paticka"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Patička<br>
+                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/body&gt;
+                    </p>
+                    <p>a k tomu se dá napsat styl mnoha a mnoha různými způsoby. Příklad stránky s pevnou šířkou:</p>
+                    <p class="code">
+                        &lt;style type="text/css"&gt;<br>
+                        &nbsp;&nbsp;body {text-align: center;}<br>
+                        &nbsp;&nbsp;#cela-stranka {width: 760px; margin: 0px auto;}<br>
+                        &nbsp;&nbsp;#leve-menu {width: 160px; float: left;}<br>
+                        &nbsp;&nbsp;#hlavni-text {width: 500px; float: left;}<br>
+                        &nbsp;&nbsp;#paticka {clear: left;}<br>
+                        &lt;/style&gt;
+                    </p>
+                    <p>Ta mříž # se vždy vztahuje k prvku se stejným id.</p>
+                </p>
+                <div class="border"></div>
+                <p id="tabulky">
+                    <h3>Tabulky</h3>
+                    <p>Nejjednodušší tabulka 2x2:</p>
+                    <p class="code">
+                        &lt;table cellspacing="0"&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;První buňka prvního řádku&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Druhá buňka prvního řádku&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;První buňka druhého řádku&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Druhá buňka druhého řádku&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &lt;/table&gt;
+                    </p>
+                    <p>Zapnutí rámečku (border) a vnitřních okrajů buněk (cellpadding):</p>
+                    <p class="code">
+                        &lt;table border="1" cellpadding="6" cellspacing="0"&gt;
+                    </p>
+                    <p>Jednoduchý rámeček (nebude dvojitý):</p>
+                    <p class="code">
+                        &lt;table border="1" style="border-collapse: collapse;"&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;první buňka...&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+                        &lt;/table&gt;
+                    </p>
+                    <p>Buňka přes dva řádky (v druhém řádku se zapíše o jednu buňku méně):</p>
+                    <p class="code">
+                        &lt;td rowspan="2"&gt;buňka přes dva řádky&lt;/td&gt;
+                    </p>
+                    <p>Buňka přes tři sloupce:</p>
+                    <p class="code">
+                        &lt;td colspan="3"&gt;buňka přes dva tři sloupce&lt;/td&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="iframe">
+                    <iframe src="vnoreny.html" width="300" height="200" align="right"></iframe>
+                    <h3>Iframe</h3>
+                    <p>Do stránky se vloží obdelník a v něm se zobrazí jiná stránka:</p>
+                    <p class="code">
+                        &lt;iframe src="jina-stranka.html" width="300" height="400" name="vnoreny"&gt;<br>
+                        &nbsp;&nbsp;alternativní text<br>
+                        &lt;/iframe&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="bublina">
+                    <h3>Bublina na přejetí myši</h3>
+                    <p>Do libovolného tagu stačí napsat atribut title="text bubliny", například:</p>
+                    <p class="code">
+                        &lt;span title="text, který se objeví ve žluté bublině"&gt;text, přes který když se přejede myší, se to objeví&lt;/span&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="flash">
+                    <h3>Flash</h3>
+                    <p>Vložení flashe (soubor swf) do stránky jednoduše:</p>
+                    <p class="code">
+                        &lt;embed src="soubor.swf" type="application/x-shockwave-flash" width="100" height="200"&gt;
+                    </p>
+                    <p>Složitě:</p>
+                    <p class="code">
+                        &lt;object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000"<br>
+                        &nbsp;&nbsp;codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0"<br>
+                        &nbsp;&nbsp;width="100" height="200"&gt;<br>
+                        &nbsp;&nbsp;&lt;param name"movie" value="soubor.swf"&gt;<br>
+                        &nbsp;&nbsp;&lt;param name"quality" value="High"&gt;<br>
+                        &nbsp;&nbsp;&lt;embed src="soubor.swf" type="application/x-shockwave-flash" name="obj1" width="100" height="200"&gt;<br>
+                        &lt;/object&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="presmerovani">
+                    <h3>Přesměrování</h3>
+                    <p>Jediné pořádné přesměrování se nedá udělat v HTML, nýbrž na serveru (v .htaccess nebo programovat). Níže popsané metody jsou jenom náhražky.</p>
+                    <p>Přesměrování meta tagem, čeká to 2 sekundy:</p>
+                    <p class="code">
+                        &lt;meta http-equiv="refresh" content="2;URL=http://wwwnekam.cz/cesta/soubor.html"&gt;
+                    </p>
+                    <p>Přesměrování javascriptem:</p>
+                    <p class="code">
+                        &lt;script type="text/javascript"&gt;Ł<br>
+                        &nbsp;&nbsp;top.location.href="http://www.nekam.cz/cesta/soubor.html";<br>
+                        &lt;/script&gt;
+                    </p>
+                </p>
+                <div class="border"></div>
+                <p id="stazeni">
+                    <h3>Stažení souboru</h3>
+                    <p>Třeba soubory .docx, .avi a podobné. Normálně odkazem na ten soubor:</p>
+                    <p class="code">
+                        &lt;a href="dokument.docx"&gt;stáhnout dokument&lt;/a&gt;
+                    </p>
+                    <p>
+                        Nechat stáhnout soubory, které prohlížeče interpretují (třeba .html nebo .js) můžete tak, že je zabalíte do .zip nebo do .rar.
+                        To se hodí i na stažení více souborů najednou:
+                    </p>
+                    <p class="code">
+                        &lt;a href="archiv.zip"&gt;stáhnout archiv&lt;/a&gt;
+                    </p>
+                    <p>Stahované soubory je samozřejmě nutné umístit na server.</p>
+                </p>
+            </p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(function(){
+            $('.dropdown').click(function(){
+            $('.navbar ul').toggle(500);
+            });
+        })
+        </script>
+        <div class="footer">
+            <p>©Jakub Trulley, IT1 2019</p>
+        </div>
+    </div>
+</body>
+</html>

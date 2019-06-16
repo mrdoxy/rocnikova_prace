@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+    <title>Základní kurz tvorby stránek</title>
+</head>
+<body>
+    <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="navbar">
+                <div class="dropdown" style="font-size: 32px;">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="container">
+                    <ul>
+                        <li><a href="index.html">Základy</a></li>
+                        <li><a href="struktura.html">Struktura stránky v HTML</a></li>
+                        <li><a href="editory.html">HTML editory</a></li>
+                        <li><p>Navštivte také:</p></li>
+                        <li><a href="tahak.html">HTML tahák</a></li>
+                        <li><a href="domeny.html">Domény na webu</a></li>
+                        <li><a href="www.html">Jak funguje WWW</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <header>
+            <h1>Základní kurz tvorby stránek</h1>
+            <div class="borderTop"></div>
+            <h2>jak si vytvořit stránku</h2>
+        </header>
+        <p style="text-indent: 0em; font-size: 13pt; display: block; margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 100px ;margin-inline-end: 100px;">
+            Některé části těchto článků mohou být zastaralé a již neaktuální.
+        </p>
+        <table>
+            <tr>
+                <td><h3>CO JE POTŘEBA</h3></td>
+                <td><h3>CO NENÍ POTŘEBA</h3></td>
+            </tr>
+            <tr>
+                <td>Mozek, to zaprvé.</td>
+                <td>Připojení k internetu</td>
+            </tr>
+            <tr>
+                <td>Budete potřebovat počítač, na kterém běží<br> alespoň nějaký jednoduchý textový editor<br> (ve Windows Notepad - Poznámkový blok).</td>
+                <td><br>Drahé nebo složité programy.</td>
+            </tr>
+            <tr>
+                <td>Webový prohlížeč.</td>
+                <td>Umět programovat.</td>
+            </tr>
+            <tr>
+                <td>Hodí se internetové připojení, není ale nezbytné.</td>
+                <td>Platit, to až když si chcete pronajmout <a href="domeny.html">doménu</a>.</td>
+            </tr>
+            <tr>
+                <td>Umět zacházet s počítačem (kopírování apod.;<br> znalost terminologie - disk, adresář, ...)</td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="obsah">
+            <div class="border"></div>
+            <p>
+                <h3>Soubory</h3>
+                <p>
+                    Internetová stránka je soubor s příponou .htm nebo html. Je to skoro obyčejný textový soubor obohacený o značky jazyka HTML (tagy).
+                    Soubor s příponou .html má na disku ikonku, která ukazuje, že jde o stránku (ikonka bývá stejná jako ta, kterou má váš defaultní webový prohlížeč).
+                </p>
+                <h3>Stránka se dá otevřít dvěma způsoby:</h3>
+                <ol style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+                    <li>jako na stránku v prohlížeči (v něm se nedá upravovat).</li>
+                    <li>jako text (třeba v Poznámkovém bloku), tomu se říká zdroj nebo kód nebo zdrojový kód, ten se dá upravovat. Tak se stránky vytvářejí, jako kód.</li>
+                </ol>
+            </p>
+            <div class="border"></div>
+            <p>
+                <h3>Postup pro začátečníky</h3>
+                <p>
+                    Jak vytvořit HTML soubor we Windows (jeden z mnoha způsobů):
+                </p>
+                <ol style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+                    <li>Vytvořte si na disku novou složku (adresář), například C:\pokus a přejděte do ní.</li>
+                    <li>Vytvořte nový textový soubor.</li>
+                    <li>Přejmenujte jej na jméno stranka.html (potvrďte změnu přípony), změní se ikona u souboru.</li>
+                    <li>Otevřete dvojklikem. V prohlížeči se zobrazí zatím prázdná stránka.</li>
+                    <li>Vraťte se do složky. Na vytvořený soubor klikněte pravým tlačítkem a zvolte Otevřít v programu. Pokud se nabídne Poznámkový blok,
+                        zvolte jej (pokud se nenabídne, musíte jej najít). Spustí se textový editor Poznámkový blok, zatím prázdný.</li>
+                    <li>
+                        Sem napište nějaký text, podle libosti jej doplňte libovolnými HTML značkami (viz. <a href="struktura.html"
+                        style="text-decoration: underline; font-weight: bold; color: #ddd;">Struktura stránky v HTML</a> a
+                        <a href="tahak.html" style="text-decoration: underline; font-weight: bold; color: #ddd;">HTML tahák</a>).
+                    </li>
+                    <li>Uložte soubor.</li>
+                    <li>Přepněte se zpět do prohlížeče a obnovte stránku.</li>
+                    <li>Prohlédněte změny.</li>
+                    <li>Případně se vraťte do textového souboru a znovu upravte zdroj. Po uložení a obnovení se změny projeví v prohlížeči.</li>
+                </ol>
+            </p>
+        </div>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(function(){
+            $('.dropdown').click(function(){
+            $('.navbar ul').toggle(500);
+            });
+        })
+        </script>
+        <div class="footer">
+            <p>©Jakub Trulley, IT1 2019</p>
+        </div>
+    </div>
+</body>
+</html>

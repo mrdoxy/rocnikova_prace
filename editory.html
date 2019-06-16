@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+    <title>Základní kurz tvorby stránek</title>
+</head>
+<body>
+    <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="navbar">
+                <div class="dropdown" style="font-size: 32px;">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="container">
+                    <ul>
+                        <li><a href="index.html">Základy</a></li>
+                        <li><a href="struktura.html">Struktura stránky v HTML</a></li>
+                        <li><a href="editory.html">HTML editory</a></li>
+                        <li><p>Navštivte také:</p></li>
+                        <li><a href="tahak.html">HTML tahák</a></li>
+                        <li><a href="domeny.html">Domény na webu</a></li>
+                        <li><a href="www.html">Jak funguje WWW</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <header>
+            <h1>Editory HTML stránek</h1>
+            <div class="borderTop"></div>
+            <p>
+                <a href="#nebo">Strukturní, nebo wysiwyg?</a> - 
+                <a href="#strukturni">Strukturní editory</a> - 
+                <a href="#wysiwyg">Wysiwyg editory</a>
+            </p>
+        </header>
+        <div id="obsah">
+            <p>
+                Editor je pojem pro program, kterým se dá něco upravovat, nejčastěji text (angl. to edit=upravovat).
+            </p>
+            <div class="border"></div>
+            <p id="nebo">
+                <h3>Strukturní, nebo wysiwyg?</h3>
+                <ol style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+                    <li>Strukturními editory se upravuje přímo výsledný HTML kód, je třeba znát HTML.</li>
+                    <li>Wysiwyg editory zobrazují stránku už při psaní tak, jak bude vypadat v prohlížeči a kód generuje automaticky, žádná znalost jazyka není potřeba.</li>
+                </ol>
+            </p>
+            <div class="border"></div>
+            <p id="Strukturni">
+                <h3>Strukturní editory</h3>
+                <p>
+                    Ač jsou poněkud těžkopádné, ten, kdo umí HTML, s nimi dovede opravdová kouzla. Program vypadá jako obyčejný texťák, navíc obvykle
+                    umožňuje pouze trochu sofistikovanější zadávání tagů. Zástupci strukturních editorů jsou například HomeSite, Notepad++, Brackets,
+                    české EasyPad a PSPad.
+                </p>
+                <p>
+                    Ačkoli v minulých letech zdálo, že lidé z pohodlnosti přejdou od strukturních editorů k wysiwyg editorům,  nestalo se tak.
+                    Strukturní editory význam neztrácejí. Používají je ale zejména profesionální tvůrci dynamických a jinak specifických stránek,
+                    kde je třeba mít naprostou kontrolu nad vytvářeným kódem.
+                </p>
+                <img src="img/strukturni.png" width="728" height="386" alt="Strukturní editor">
+            </p>
+            <div class="border"></div>
+            <p id="wysiwyg">
+                <h3>Wysiwyg editory</h3>
+                <p>
+                    Wysiwyg je anglická zkratka která znamená "What you see is what you get", tedy "co vidíš, to dostaneš". Práce s nimi je velmi pohodlná. Nevýhodou je,
+                    že neukazují úplně přesně to, co z toho vyleze a že občas dělají zmatek v kódu. Wysiwyg editory jsou například:
+                </p>
+                <ul style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+                    <li>Microsoft Web Expression (zdarma)</li>
+                    <li>Microsoft FrontPage</li>
+                    <li>Dreamweaver</li>
+                    <li>NVU (zdarma).</li>
+                </ul>
+                <img src="img/wysiwyg.png" alt="wysiwyg editor" width="750" height="385">
+            </p>
+        </div>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(function(){
+            $('.dropdown').click(function(){
+            $('.navbar ul').toggle(500);
+            });
+        })
+        </script>
+        <div class="footer">
+            <p>©Jakub Trulley, IT1 2019</p>
+        </div>
+    </div>
+</body>
+</html>

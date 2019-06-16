@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+    <title>Základní kurz tvorby stránek</title>
+</head>
+<body>
+  <div class="col-md-12 col-xs-12 col-sm-12">
+    <div class="navbar">
+            <div class="dropdown" style="font-size: 32px;">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="container">
+                <ul>
+                    <li><a href="index.html">Základy</a></li>
+                    <li><a href="struktura.html">Struktura stránky v HTML</a></li>
+                    <li><a href="editory.html">HTML editory</a></li>
+                    <li><p>Navštivte také:</p></li>
+                    <li><a href="tahak.html">HTML tahák</a></li>
+                    <li><a href="domeny.html">Domény na webu</a></li>
+                    <li><a href="www.html">Jak funguje WWW</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+    </div>
+    <header>
+        <h1>Domény</h1>
+        <div class="borderTop"></div>
+        <h2>z pohledu uživatele a majitele</h2>
+        <p>
+          <a href="#urovne">Úrovně domén</a> - 
+          <a href="#genericke">Domény nejvyššího řádu</a> - 
+          <a href="#jak">Jak zřídit doménu</a> - 
+          <a href="#cena">Kolik stojí doména 2. úrovně</a> - 
+          <a href="#3">3. úroveň domén</a> - 
+          <a href="#cesta">Cesta za lomítkem</a> - 
+          <a href="#freeweby">Freeweby</a> - 
+          <a href="#vhodnost">Vhodnost jmen</a> - 
+          <a href="#kupovani">Kupování domén</a>
+        </p>
+    </header>
+    <div id="obsah">
+      <p>Když ťukáte do prohlížeče adresu nějaké stránky, určitě přemýšlíte, proč se to zapisuje zrovna takhle. Následující text se pokusí:</p>
+      <ol style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+        <li>napřed jednoduše vysvětlit teorii okolo domén</li>
+        <li>a pak ukázat, na jak různých adresách můžete mít svoje stránky</li>
+      </ol>
+      <div class="border"></div>
+      <p id="urovne">
+        <h3>Úrovně domén</h3>
+        <p>
+          Adresu stránky tvoří několik domén oddělených tečkami:<br>
+          http://3_úroveň.2_úroveň.1_úroveň<br>
+          Před třetí úrovní může být ještě čtvrtá, pátá atd.
+        </p>
+        <p>Příklad: <font color="#800080">www.</font><font color="#FF0000">seznam.</font><font color="#008000">cz</font></p>
+        <ol style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+          <li><font color="#008000">cz</font> - doména 1. řádu(nejvyššího řádu)</li>
+          <li><font color="#FF0000">seznam</font> - doména 2. řádu (o tom to celé je)</li>
+          <li><font color="#800080">www</font> - doména 3. řadu (nejčastěji www nebo jméno počítače); jsou možné i domény dalších řádů, ty jsou nepovinné</li>
+          <li>součástí adresy bývá cesta k souboru psaná za lomítkem (v tomto případě tam není)</li>
+        </ol>
+        <p>
+          Podstatné jsou <font color="FF0000">domény druhého řádu.</font> Když se mezi lidmi v Čechách mluví o doménách, myslí se tím většinou doména druhého řádu (seznam, google, youtube apod.).
+        </p>
+        <p>Doménám <font color="#800080">třetího</font> a dalších řádů se také říká subdomény.</p>
+      </p>
+      <div class="border"></div>
+      <p id="genericke">
+        <h3>Domény nejvyššího řádu</h3>
+        <p>Aneb domény prvního řádu vyjadřují: </p>
+        <ul style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+          <li>příslušnost k zemi, národu nebo státu unie (např. cz, sk, uk, de, ny, eu)</li>
+          <li>všeobecné zaměření (com, gov, edu, net, info, biz, name), to jsou takzvané generické domény</li>
+        </ul>
+        <p>
+          V českém prostředí se nejčastěji používá generická doména cz, čímž se její majitel jaksi hlásí k Česku. Není na to ale žádný zákon nebo pravidlo,
+          pokud chcete mít jako doménu nejvyššího řádu jinou existující, můžete. Slovenská doména je sk.
+        </p>
+        <p>
+          Všeobecné generické domény jsou například .com (komerční zaměření), .gov (vládní úřady USA), .edu (vzdělávací instituty), .info (cestovní ruch), nebo
+          .net (síťové zaměření).
+        </p>
+        <p>Doménám nejvyššího řádu se anglicky říká Top Level Domains, zkratka TLD.</p>
+        <p>Každá generická doména má svého správce, což je takový skoro úřad. Doména CZ má za správce sdružení NIC.</p>
+      </p>
+      <div class="border"></div>
+      <p id="jak">
+        <h3>Jak zřídit doménu 2. řádu</h3>
+        <p>Dejme tomu, že chci mít stránky na adrese www.nejakadomena.cz. </p>
+        <p>Dva způsoby:</p>
+        <ol style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+          <li>Nechat si to zaregistrovat někým, kdo to umí a má server s pevnou IP adresou (poskytovatel hostingu).</li>
+          <li>Zkusit to u registrátora na vlastní pěst.</li>
+        </ol>
+        <p>
+          Vřele doporučuji nechat to na někoho, kdo s tím má zkušenosti. Registrace u registrátora totiž obsahuje docela dost administrativy a pro laika pár neznámých pojmů.
+          Levnější to přímo u registrátora většinou není, nebo ne o moc.
+        </p>
+        <h3>Nejjednodušší postup</h3>
+        <p>
+          Najděte si někoho, kdo poskytuje hosting a registraci domén. Zjistěte si, jestli je doména volná (nejlépe na www.nic.cz),
+          zkontrolujte ceny hostingu a domény a objednejte si to.
+        </p>
+        <p>
+          Cena domény .cz se dnes (2019) pohybuje kolem dvou až tří stovek na rok. Někdo to sice dává podstatně laciněji, ale zase třeba má drahý hosting (a ví, že se na tom zahojí).
+          Objednávat doménu bez hostingu prakticky nemá smysl (nefungovala by). Roční hosting jednoduchých stránek by se měl vejít do 600 Kč.¨
+          Dohromady doména i s hostingem a s celou parádou dalších služeb stojí nejvýše 1000 Kč ročně.
+        </p>
+      </p>
+      <div class="border"></div>
+      <p id="cena">
+        <h3>Kolik stojí doména 2. řádu</h3>
+        <p>
+          Pokud se tedy rozhodnete přenechat registraci odborníkům, je třeba se mezi poskytovateli orientovat podle ceny a podle kvality nabízených služeb.
+          Ve chvíli, kdy objednáváte doménu, objednáváte zároveň i hosting!
+        </p>
+        <p>Cena za registraci domény má 3 složky:</p>
+        <ol style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+          <li>
+            Poplatek registrátorovi (dříve NIC, dnes více subjektů). Dělá to asi 200 korun na rok. Tomuto poplatku se nelze nijak vyhnout. Domény .net, .org, .com jsou o něco lacinější.
+            Od 1. ledna 2006 je zrušen zřizovací registrační poplatek, který se platil navíc a dělal asi pět stovek.
+          </li>
+          <li>Cena za práci při registraci.</li>
+          <li>
+            Cena za hosting. Hosting je souhrnný pojem pro ten fakt, že stránky budou fungovat. Stránky běží na serveru poskytovatele. K tomu patří doplňkové služby,
+            například provoz FTP a mailových adres jmeno@mojedomena.cz. Cena hostingu se počítá za rok nebo za měsíc.
+          </li>
+        </ol>
+      </p>
+      <div class="border"></div>
+      <p id="3">
+        <h3>3. úroveň domén (subdomény)</h3>
+        <p>
+            Nejčastěji se jako text domény třetího řádu dává "www". Je to zvyk z doby, kdy služba www ještě nebyla na Internetu dominantní. Lidé si na to ale zvykli, a proto je hloupost to měnit. 
+        </p>
+        <p>V rámci jedné domény druhého řádu se mohou zřizovat další domény třetího řádu. Pro poskytovatele s tím nejsou spojené žádné náklady kromě té trošky práce.</p>
+        <p>
+          Např. můžete mít adresu<br>
+          http://<font color="FF0000">kontakt</font>.mojefirma.cz namísto <br>
+          http://www.mojefirma.cz/kontakt.htm. Tato druhá samozřejmě zůstává funkční.
+        </p>
+        <h3>3. úroveň zdarma</h3>
+        <p>
+            Dost často se můžete domluvit s poskytovatelem, který už má svojí doménu druhé úrovně, že vás nechá publikovat na svém serveru v rámci své domény zadarmo. Udělá vám třetí doménu<br>
+            http://<font color="FF0000">vašejméno</font>.poskytovatel.cz
+        </p>
+        <p>
+          Co z toho poskytovatel má? V první řadě nic neztrácí, skoro nic ho to nestojí. Vaše stránky se ale čtenářům zobrazují z adresy jeho domény. 
+          To je pro poskytovatele dobrá reference a vlastně i malá reklama. Někdy si navíc vyhradí zobrazení odkazu nebo loga.
+        </p>
+        <p>
+          Jindy si majitel druhé domény něco.cz nechá zaplatit za hosting třetí domény vašejméno.něco.cz. V porovnání s doménou druhé úrovně je to stále levnější.
+        </p>
+      </p>
+      <div class="border"></div>
+      <p id="cesta">
+        <h3>Cesta za lomítkem</h3>
+        <p>Podobně poskytovatele nic nestojí udělat vám prostor "za lomítkem".</p>
+        <p class="code">
+            http://www.poskytovatel.cz/<font color="FF0000">vasejmeno</font>/
+        </p>
+        <p>
+          Prostě se v rootu webu udělá nová složka (aneb adresář) nazvaná "vasejmeno", v ní budete mít soubory. A to je všechno, 
+          co se musí poskytovatel udělat (ještě nastavit FTP práva na aktualizaci). 
+        </p>
+      </p>
+      <div class="border"></div>
+      <p id="freeweby">
+        <h3>Freeweby</h3>
+        <p>
+          Předchozí možnosti měly nevýhodu, že se to hostování musí domlouvat. Existují ale "freeweby", kde se to nedomlouvá, 
+          ale registruje formulářem. Například webnode.cz, www.webzdarma.cz atd. Stránky tam běží také zdarma.
+        </p>
+        <p>
+          Adresa má opět tvar domény třetího řádu<br>
+          http://<font color="FF0000">vašejméno</font>.freeweb.cz<br>
+          nebo jména za lomítkem<br>
+          http://www.freeweb.cz/<font color="FF0000">vasejmeno</font>/,<br>
+          to záleží na tom, co ten freeweb umožňuje. To freeweb je samozřejmě nutno nahradit skutečnou adresou freewebu.
+        </p>
+        <p>
+          Úroveň freewebů bývá různá. Některé jsou spolehlivé, některé prakticky nefungují. Občas jsou k dispozici služby navíc (PHP, formuláře, komponenty).
+        </p>
+        <p>Základní nevýhody freewebů:</p>
+        <ul style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+          <li>nemáte komu nadávat, když to přestane fungovat. Což se stává často (ale zase jak kde);</li>
+          <li>tránky jsou většinou automaticky oblepeny reklamami;</li>
+          <li>freeweby často mění podmínky.</li>
+        </ul>
+      </p>
+      <div class="border"></div>
+      <p id="vhodnost">
+        <h3>Vhodnost jmen</h3>
+        <p>Omezení jmen domén (2 a vyššího řádu) jsou trojí: </p>
+        <ul style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+          <li>technická omezení</li>
+          <li>zabraná doména</li>
+          <li>mělo by to být logické a zapamatovatelné</li>
+        </ul>
+        <p>
+          Technickými omezeními myslím zejména zakázané znaky. Ve jménech domén nesmějí být mezery. Diakritika (háčky a čárky) se také nedá použít. 
+          Zakázané jsou znaky . : ? & @ # a určitě i jiné znaky, například jsem nikdy neviděl podtržítko. 
+          Naopak je povolená pomlčka, která se doporučuje na místa mezer. Například se doporučuje moje-stranka.cz namísto mojestranka.cz 
+          (kvůli vyhledávačům, aby poznaly, kde končí slovo).
+        </p>
+        <h3>Zabraná doména</h3>
+        <p>Zabrané domény nemá smysl komentovat. Tam patří kdo dřív přijde, ten to má. Zkuste:</p>
+        <ul style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+          <li>vymyslet podobné jméno;</li>
+          <li>zaregistrovat jméno pod jinou generickou doménou (net, info, com);</li>
+          <li>zaregistrovat jméno na nějakém zřejmém freewebu;</li>
+          <li>domluvit se s majitelem o převodu (prakticky odkoupení) domény;</li>
+        </ul>
+        <h3>Pozor, kde ověřujete</h3>
+        <p>
+          Ověřování domén, které vás opravdu zajímají, dělejte jenom na webech, kterým věříte. Typicky na webu velkých hostingů nebo registrátorů, případně na nic.cz. 
+          Raději neověřujte doménová jména v nějakém neznámém formuláři na webu garážového hostingu. Takový formulář totiž může někdo logovat a číst si vaše nápady, které testujete. 
+          Když je to dobrý nápad, tak si doménu sám zaregistruje dříve ten podvodný provozovatel ověřovacího formuláře. Nejlepší je testovat na nic.cz.
+        </p>
+      </p>
+      <div class="border"></div>
+      <p id="kupovani">
+        <h3>Kupování domén</h3>
+        <p>
+          S majitelem domény se můžete domluvit, že vám doménu prodá. Cena je smluvní. Až se domluvíte na ceně, vleze si prodávající ke svému registrátorovi a buďto doménu 
+          převede na kupujícího (pokud mají stejného registrátora), nebo (a to častěji) kupujícímu pošle tajný ochranný kód. Pomocí tohoto kódu si pak může kupující u svého 
+          registrátora doménu převést k sobě a nastavit, jak potřebuje.
+        </p>
+        <p>
+          Jinak řečeno na převod domény potřebujete kód. Ten se dá zpravidla dohledat ve webovém rozhraní registrátora (ale občas bývá dost schovaný, což je koneckonců správně).
+        </p>
+      </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('.dropdown').click(function(){
+          $('.navbar ul').toggle(500);
+        });
+      })
+    </script>
+    <div class="footer">
+        <p>©Jakub Trulley, IT1 2019</p>
+    </div>
+  </div>
+</body>
+</html>

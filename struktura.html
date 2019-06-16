@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon"/>
+    <title>Základní kurz tvorby stránek</title>
+</head>
+<body>
+    <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="navbar">
+                <div class="dropdown" style="font-size: 32px;">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="container">
+                    <ul>
+                        <li><a href="index.html">Základy</a></li>
+                        <li><a href="struktura.html">Struktura stránky v HTML</a></li>
+                        <li><a href="editory.html">HTML editory</a></li>
+                        <li><p>Navštivte také:</p></li>
+                        <li><a href="tahak.html">HTML tahák</a></li>
+                        <li><a href="domeny.html">Domény na webu</a></li>
+                        <li><a href="www.html">Jak funguje WWW</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <header>
+            <h1>Struktura stránky v HTML</h1>
+        </header>
+        <P>
+            <table align="center" border="1" cellpadding="6" cellspacing="0">
+                    <tbody><tr style="background-color: darkgrey; color: black">
+                        <th>Tag</th>
+                        <th>Význam</th>
+                        <th>Párový</th>
+                        <th>Výskyt</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#html">html</a></td>
+                        <td>začátek HTML dokumentu</td>
+                        <td>ano</td>
+                        <td>na začátku souboru</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#head">head</a></td>
+                        <td>hlavička stránky</td>
+                        <td>ano</td>
+                        <td>na začátku souboru</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#body">body</a></td>
+                        <td>tělo stránky + definice pozadí</td>
+                        <td>ano</td>
+                        <td>za &lt;head&gt;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#poznamka">&lt;!-- --&gt;</a></td>
+                        <td>poznámka</td>
+                        <td>ano</td>
+                        <td>kdekoliv&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#doctype">!doctype</a></td>
+                        <td>specifikace DTD</td>
+                        <td>ne</td>
+                        <td>úplně na začátku souboru</td>
+                    </tr>
+                </tbody>
+            </table>
+        </P>
+        <div id="obsah">
+            <div class="border"></div>
+            <p id="html">
+                <h3>HTML</h3>
+                <p>
+                    Začíná a končí celý dokument. Veškerý další obsah musí být uvnitř. Jedná se o značku nepovinnou,
+                    většina prohlížečů si ji domyslí. Pokud ale chcete mít soubory v souladu s dobrými mravy, &lt;html&gt; tag používejte.
+                </p>
+                <p>Tag html nemá žádné atributy.</p>
+            </p>
+            <div class="border"></div>
+            <p id="head">
+                <h3>Head</h3>
+                <p>
+                    Hlavička dokumentu, která se nezobrazuje. Obsahuje nepovinně další tagy (title, meta, link, style, script aj.).
+                    Pokud v hlavičce použijete prostý text, v některých prohlížečích se zobrazí na začátku stránky!
+                </p>
+                <p>Tag head nemá žádné atributy.</p>
+            </p>
+            <div class="border"></div>
+            <p id="body">
+                <h3>Body</h3>
+                <p>Tělo dokumentu. Obsahuje veškerý zobrazovaný obsah stránky.</p>
+                <p>Všechny níže zmíněné atributy tagu body (vyjma obecných) jsou zastaralé a nahrazují se využitím CSS vlastností.</p>
+                <p>Atributy tagu &lt;body&gt;:</p>
+                <ul style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+                    <li>bgcolor = barva pozadí</li>
+                    <li>background = obrázek na pozadí</li>
+                    <li>text = barva popředí (textu)</li>
+                    <li>link = barva nenavštívených odkazů</li>
+                    <li>vlink = barva navštívených odkazů</li>
+                    <li>alink = barva klikaných odkazů (a pod tabulátorem)</li>
+                    <li>bgproperties = posouvání obrázkového pozadí</li>
+                    <li>scroll = rolování těla (raději neměňte)</li>
+                    <li>leftmargin = levý okraj</li>
+                    <li>rightmargin = pravý okraj</li>
+                    <li>topmargin = horní okraj</li>
+                    <li>bottommargin = spodní okraj</li>
+                </ul>
+            </p>
+            <div class="border"></div>
+            <p id="poznamka">
+                <h3>Poznámka</h3>
+                <p>
+                    Všechno, co je v HTML souboru obaleno značkami &lt;!-- a --&gt;, je považováno za poznámku a nezobrazuje se. &lt;!-- je tedy začátek poznámky, -gt; její konec.
+                    Poznámkám se také říká "komentáře".
+                </p>
+                <p>Tři záludnosti:</p>
+                <ul style="margin-block-start: 2em; margin-block-end: 2em; margin-inline-start: 125px; margin-inline-end: 100px;">
+                    <li>Nevnořujte poznámky: &lt;!-- toto je poznámka &lt;!-- toto také --&lt; ale tohle už ne! --&gt;</li>
+                    <li>
+                        Některé programy a skripty používají poznámky na vkládání různých věcí. Za znak poznámky se pak dává nějaký řetězec.
+                        Např.: &lt;!--# je SSI vložka --&gt;, &lt;!--webbot je vložka FrontPage --&gt;. Prohlížeče si jich ale nevšímají, což je správně.
+                    </li>
+                    <li>
+                        Specifikace říká, že v ukončení poznámky, tedy v sekvenci --&gt; může být mezera nebo jiné znaky. Takže toto: -- &gt;
+                        je také konec poznámky. Dávejte si pozor, abyste do html poznámky nepsali dvě pomlčky za sebou -- protože potom stačí jeden pravý zobáček &gt;
+                        a tohle už pak není poznámka.
+                    </li>
+                </ul>
+            </p>
+            <div class="border"></div>
+            <p id="doctype">
+                <h3>!doctype</h3>
+                <p>
+                    Specifikace DTD. Píše se úplně na začátek souboru, ještě před značku &lt;html&gt;. Navíc se udává verze HTML, které dokument odpovídá. Jde částečně o formalitu,
+                    částečně o užitečnou věc.
+                </p>
+                <p>
+                    Hlavní užitečnou funkcí !doctype je dnes přepínání zobrazovacích modů CSS. Jinak řečeno podle doctype se určuje, ve kterém prohlížeči se
+                    budou jak počítat šířky a velikosti písma. Je to velmi pošahaná a nepříjemná situace, která vznikla historickým vývojem. O přepínání módů prohlížečů.
+                </p>
+                <p>
+                    Doctype se vyvinulo ze standardu značkovacích jazyků SGML a XML kterým bylo nutné strukturovanou formou říci, že tento dokument je HTML dokument. To je ta formalita.
+                </p>
+            </p>
+            <div class="border"></div>
+            <p>
+                <h3>Příklad</h3>
+                <p>Klasický HTML soubot může vypadat takto:</p>
+                <p class="code">
+                    &lt;!doctype html&gt;<br>
+                    <br>
+                    &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;obsah hlavičky<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        <br>
+                        &nbsp;&nbsp;&lt;body&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;obsah těla<br>
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </p>
+            </p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(function(){
+            $('.dropdown').click(function(){
+            $('.navbar ul').toggle(500);
+            });
+        })
+        </script>
+        <div class="footer">
+            <p>©Jakub Trulley, IT1 2019</p>
+        </div>
+    </div>
+</body>
+</html>
